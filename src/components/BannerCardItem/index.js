@@ -1,8 +1,8 @@
 // Write your code here.
 import './index.css'
 
-const BannerCardItem = props => {
-  const {sourceItem} = props
+const BannerCardItem = prop => {
+  const {sourceItem} = prop
   const {headerText, description, className} = sourceItem
   return (
     <li className={className}>

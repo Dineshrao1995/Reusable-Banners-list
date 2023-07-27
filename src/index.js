@@ -1,10 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+// Write your code here.
+import './index.css'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-)
+const BannerCardItem = prop => {
+  const {sourceItem} = prop
+  const {headerText, description, className} = sourceItem
+  return (
+    <li className={className}>
+      <div>
+        <h1 className="card-heading">{headerText}</h1>
+        <p className="card-description">{description}</p>
+        <button type="button" className="card-button">
+          Show More
+        </button>
+      </div>
+    </li>
+  )
+}
+
+export default BannerCardItem

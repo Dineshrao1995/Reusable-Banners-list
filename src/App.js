@@ -1,5 +1,5 @@
 import './App.css'
-import BannerCarItem from './component/BannerCarItem/index'
+import BannerCardItem from './component/BannerCarItem/index'
 
 const bannerCardsList = [
   {
@@ -25,7 +25,8 @@ const bannerCardsList = [
 
 const App = () => 
 <div className="cards-bg-con">
-    <ul>{bannerCardsList.map(eachObj=>(<BannerCardItem sourceItem={eachObj) key=eachObj.id/>
+    <ul>
+    {bannerCardsList.map(eachObj=>(<BannerCardItem sourceItem={eachObj) key=eachObj.id/>
 
     ))}
     </ul>
